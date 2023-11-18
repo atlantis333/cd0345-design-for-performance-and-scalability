@@ -5,3 +5,6 @@ variable "bucket_name" {
 variable "source_file" {
   description = "Source files"
 }
+variable "s3_bucket_policy" {
+  description = "S3 bucket policy content"
+}
