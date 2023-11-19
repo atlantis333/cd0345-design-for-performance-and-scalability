@@ -1,0 +1,21 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,77.89,934.68,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Reduced_Cost_Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,32.89,394.68,USD,,Number of NAT Gateways (1)
+Reduced_Cost_Estimate,US East (N. Virginia),,Amazon CloudFront,0,0.21,2.52,USD,,"Data transfer out to internet (2 GB per month), Number of requests (HTTPS) (1000 per month), Data transfer out to origin (2 GB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),,S3 Standard,0,2.31,27.72,USD,,"S3 Standard storage (100 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (100), GET, SELECT, and all other requests from S3 Standard (100), Data returned by S3 Select (1 GB per month), Data scanned by S3 Select (2 GB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,"DT Inbound: Internet (100 GB per month), DT Outbound: Amazon CloudFront (100 GB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),web servers,Amazon EC2 ,0,3.3684,40.42,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (t4g.nano), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),application servers,Amazon EC2 ,0,3.3684,40.42,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (t4g.nano), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),DB servers,Amazon EC2 ,0,13.4736,161.68,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (t4g.small), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Reduced_Cost_Estimate,US East (N. Virginia),,Application Load Balancer,0,22.27,267.24,USD,,Number of Application Load Balancers (1)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

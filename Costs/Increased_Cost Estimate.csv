@@ -1,0 +1,21 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,395.01,4740.12,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Increased_Cost Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.08,396.96,USD,,Number of NAT Gateways (1)
+Increased_Cost Estimate,US East (N. Virginia),,Amazon CloudFront,0,2.1,25.20,USD,,"Data transfer out to internet (20 GB per month), Number of requests (HTTPS) (1000 per month), Data transfer out to origin (20 GB per month)"
+Increased_Cost Estimate,US East (N. Virginia),,S3 Standard,0,2.33,27.96,USD,,"S3 Standard storage (100 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000), GET, SELECT, and all other requests from S3 Standard (1000), Data returned by S3 Select (10 GB per month), Data scanned by S3 Select (10 GB per month)"
+Increased_Cost Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,"DT Inbound: Internet (100 GB per month), DT Outbound: Amazon CloudFront (100 GB per month)"
+Increased_Cost Estimate,US East (N. Virginia),web servers,Amazon EC2 ,0,76.992,923.90,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (m5.large), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),application servers,Amazon EC2 ,0,76.992,923.90,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (m5.large), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),DB servers,Amazon EC2 ,0,181.252,2175.02,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Monthly, Baseline: 1, Peak: 2, Duration of peak: 3 Day 0 Hr 0 Min), Advance EC2 instance (m5d.xlarge), Pricing strategy (On-Demand), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Increased_Cost Estimate,US East (N. Virginia),,Application Load Balancer,0,22.27,267.24,USD,,Number of Application Load Balancers (1)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
