@@ -1,19 +1,3 @@
-# TODO: Designate a cloud provider, region, and credentials
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-
-}
-
-provider "aws" {
-  profile = "devaccount"
-  region  = var.aws_region
-}
-
 # Lookup Ubunut AMI Image
 data "aws_ami" "ubuntu" {
   most_recent = true
@@ -46,27 +30,6 @@ resource "aws_instance" "instance_t2" {
   associate_public_ip_address = true
   subnet_id = aws_subnet.tf_test_subnet.id
 
-#   tags = {
-#     Name  = element(var.instance_tags, count.index)
-#     Env = "Prod"
-#   }
-}
-
-# TODO: provision 2 m4.large EC2 instances named Udacity M4
-
-resource "aws_instance" "instance_m4" {
-  count         = var.instance_count_m4
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = var.instance_type_m4
-  key_name      = var.key_name
-#   user_data     = file("install_apache.sh")
-  associate_public_ip_address = true
-  subnet_id = aws_subnet.tf_test_subnet.id
-
-#   tags = {
-#     Name  = element(var.instance_large_tags, count.index)
-#     Env = "Prod"
-#   }
 }
 
 # Default VPC
